@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单标签</title>
+</head>
+<body>
+    
+
+    <form action="sad.php" method="get">
+
+        用户名：<input type="text" value="请输入用户名" maxlength="10" name="username">  <br>
+        密码：<input type="password" name="password"> <br>
+        性别：<label for="man" >男</label> <input type="radio" name="sex"  id="man"> <label for="woman">女</label> <input type="radio" name="sex" id="woman"> <br>
+
+        爱好：打篮球 <input type="checkbox" name="hobby"> 跑步 <input type="checkbox" name="hobby" checked="checked"> 踢足球 <input type="checkbox" name="hobby">
+
+        <br>
+        <input type="submit" value="免费注册">
+
+        <input type="reset" value="重新填写">
+
+        <!-- 普通按钮，后期配置js一块使用 -->
+        <input type="button" value="获取短信验证码">
+        
+        <input type="file">  <br>
+
+        籍贯：
+        <select name="jiguan" id="jiguan">
+            <option value="北京">北京</option>
+            <option value="天津">天津</option>
+            <option value="南京" selected="selected">南京</option>
+            <option value="火星">火星</option>
+
+
+        </select> <br>
+ 
+        留言板： <textarea name="liuyan" id="liuyan" cols="30" rows="10" >请输入你的留言</textarea>
+    </form>
+
+
+
+
+</body>
+</html>

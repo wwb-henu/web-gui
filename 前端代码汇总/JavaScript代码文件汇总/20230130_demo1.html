@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //分割数组
+        var str = '';
+        var sep = '|'
+        var arr = ['red', 'green', 'blue', 'pink']
+        for (var i = 0; i < arr.length; i++) {
+            str += arr[i] + sep;
+        }
+        console.log(str);
+        //求数组的平均值
+        /* var arr = [45, 65, 89, 23, 45];
+        var sum = 0;
+        for (var i = 0; i < arr.length; i++) {
+            sum += arr[i];
+        }
+        console.log('数组的和为:' + sum);
+        console.log('数组的平均值为:' + sum / arr.length);
+        console.log(sum, sum / arr.length);
+
+        var max = 0;
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        console.log('数组最大的值为:' + max); */
+
+        /* var arr = ['关羽', '张飞', '马超', '赵云', '黄忠', '刘备', '姜维'];
+        for (var i = 0; i < 7; i++) {
+            console.log(arr[i]);
+        }
+        console.log(arr.length);;
+        for (var i = 0; i < arr.length; i++) {
+            console.log(arr[i]);
+        } */
+        //星期数组
+        /* var arr = ['星期1', '星期2', '星期3', '星期4', '星期5', '星期6', '星期7'];
+        console.log(arr[6]); */
+        //数组的创建
+        /* var arr1 = new Array();
+        var arr2 = [1, true, 'abcd', null];
+        console.log(arr2);
+        console.log(arr2[2]); */
+        //存钱取钱程序
+        /* var balance = 100;
+        do {
+            var str = prompt('请输入你要的操作:' + '\n' + '1.存钱' + '\n' + '2.取钱' + '\n' + '3.显示余额' + '\n' + '4.退出');
+            var num = parseInt(str);
+            switch (num) {
+                case 1:
+                    var addBalance = prompt('请您输入存的钱数:');
+                    balance += parseFloat(addBalance);
+                    alert('当前账户余额为:' + balance);
+                    break;
+                case 2:
+                    var reduceBalance = prompt('请您输入取的钱数:');
+                    balance -= parseFloat(reduceBalance);
+                    alert('当前账户余额为:' + balance);
+                    break;
+                case 3:
+                    alert('当前账户余额为:' + balance);
+                    break;
+                case 4:
+                    break;
+                default:
+                    break;
+            }
+        } while (num != 4) */
+        //求整数1-100的累加值，但是跳过个位为3的数
+        /* var sum = 0;
+        for (var i = 1; i <= 100; i++) {
+            if (i % 10 == 3) {
+                continue;
+            }
+            sum += i;
+        }
+        console.log(sum);
+ */
+        //用户名密码验证
+        /* do {
+            var str1 = prompt('请输入用户名');
+            var str2 = prompt('请输入密码');
+
+        } while (str1 !== 'admin' || str1 === 'admin' && str2 !== '123456')
+        alert('用户登录成功');
+ */
+
+        //break关键字
+        /*  for (var i = 1; i <= 3; i++) {
+             if (i == 3) {
+                 break;
+             }
+             console.log('我正在吃第' + i + '个包子');
+         } */
+        //求1到100之间，除了能被7整除的数之和
+        /* var sum = 0;
+        for (var i = 1; i <= 100; i++) {
+            if (i % 7 == 0) {
+                continue;
+            }
+            sum += i;
+
+        }
+        console.log(sum);*/
+        //continue关键字
+        /* for (var i = 1; i <= 5; i++) {
+            if (i == 3) {
+                continue;
+            }
+            console.log('我正在吃第' + i + '个包子');
+        } */
+
+
+
+        /* do {
+            var temp = prompt('你爱我吗');
+
+        } while (temp !== '我爱你')
+        alert('我也爱你啊'); */
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
